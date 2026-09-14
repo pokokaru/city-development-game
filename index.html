@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>都市開発ゲーム</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="ui">
+            <div class="sidebar">
+                <h2>都市開発ゲーム</h2>
+                
+                <div class="section">
+                    <h3>施設建設</h3>
+                    <button id="buildHouse" class="buildBtn">住宅 ($100)</button>
+                    <button id="buildShop" class="buildBtn">商業施設 ($150)</button>
+                    <button id="buildFactory" class="buildBtn">工場 ($200)</button>
+                    <button id="buildRoad" class="buildBtn">道路 ($50)</button>
+                    <button id="buildPark" class="buildBtn">公園 ($80)</button>
+                </div>
+
+                <div class="section">
+                    <h3>ゲーム情報</h3>
+                    <p>資金: $<span id="money">5000</span></p>
+                    <p>人口: <span id="population">0</span>人</p>
+                    <p>満足度: <span id="happiness">50</span>%</p>
+                    <p>時間: <span id="gameTime">00:00</span></p>
+                </div>
+
+                <div class="section">
+                    <h3>操作</h3>
+                    <p>クリックして施設を建設</p>
+                    <p>右クリックで削除</p>
+                    <button id="resetBtn" class="resetBtn">リセット</button>
+                </div>
+            </div>
+
+            <canvas id="gameCanvas"></canvas>
+        </div>
+    </div>
+
+    <script src="js/map.js"></script>
+    <script src="js/building.js"></script>
+    <script src="js/citizen.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
